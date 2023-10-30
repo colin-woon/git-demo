@@ -1,0 +1,4 @@
+This was edited in vim.
+
+git init - initialize a git repository folder locally
+
