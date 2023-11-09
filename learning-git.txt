@@ -5,7 +5,13 @@ git config --global user.email <email>
 git config --global user.name <name>
 git config --global core.editor <editor-choice>
 git branch -m <new name> = changes the current branch name
-git remote add origin <git url> = adds a remote repository and hooks it up to the url
+git remote add origin <repo url> = adds a remote repository and hooks it up to the url
 (actually "origin" is a naming convention for remote repos, can be any name)
+
+NOTE: when prompt to enter password, use personal access token (generate it from developer settings in github)
+
 git push -u origin main = pushes committed changes onto remote repo called "origin" to "main" branch
 (-u sets upstream, future git pull and push will track and update only that branch)
+
+git remote -v =view current set up push and pull
+git remote set-url origin =changes the push and pull location
