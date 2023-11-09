@@ -1,4 +1,8 @@
 This was edited in vim.
 
-git init - initialize a git repository folder locally
-
+git init = initialize a git repository folder locally
+git config --global user.email <email>
+git config --global user.name <name>
+git config --global core.editor <editor-choice>
+git branch -m <new name> = changes the current branch name
+git remote add origin <git url> = adds a remote repository and hooks it up to the url
