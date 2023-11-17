@@ -14,4 +14,13 @@ git push -u origin main = pushes committed changes onto remote repo called "orig
 (-u sets upstream, future git pull and push will track and update only that branch)
 
 git remote -v =view current set up push and pull
-git remote set-url origin =changes the push and pull location
+git remote set-url <remote-name(in this case: origin)> <new-url> =changes the push and pull location
+
+OR
+
+Generate an SSH key and link it to your github account
+ssh-keygen -t rsa -b 4096 -C "work@example.com" -f ~/.ssh/id_rsa_work OR just ssh-keygen
+-t = type, rsa
+-b = no. of bits, 4096
+-c = comments, optional "work@example.com"
+-f = specify filename for the generated key, ~/.ssh/id_rsa_work  (it will be stored in id_rsa_work)
