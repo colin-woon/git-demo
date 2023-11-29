@@ -40,7 +40,7 @@ PreferredAuthentications publickey
 IdentityFile ~/.ssh/id_work
 
 --Then
-eval ${ssh-agent}		(initialize ssh agent)
+eval $(ssh-agent -s)		(initialize ssh agent)
 ssh-add -l 			(check keys)
 ssh-add <private key path> 	(add key to agent)
 
